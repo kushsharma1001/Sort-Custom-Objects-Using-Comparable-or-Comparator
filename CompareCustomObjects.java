@@ -10,8 +10,8 @@ class CompareCustomObjects {
         employeeArr[0] = new Employee(1, "AAA", 11, 4000);
         employeeArr[1] = new Employee(2, "BBB", 19, 3000);
         employeeArr[2] = new Employee(3, "CCC", 15, 2000);
-        employeeArr[3] = new Employee(4, "DDD", 27, 1000);
-        employeeArr[4] = new Employee(5, "EEE", 27, 9000);
+        employeeArr[3] = new Employee(4, "EEE", 27, 1000);
+        employeeArr[4] = new Employee(5, "DDD", 27, 9000);
 
         Arrays.sort(employeeArr); // Arrays.sort(employeeArr, Collections.reverseOrder());
         for (Employee emp : employeeArr)
@@ -36,7 +36,7 @@ class CompareCustomObjects {
     }
 }
 
-class Employee implements Comparable<Employee> { // we can also implement comparator interface and then override the comparator interface.
+class Employee implements Comparable<Employee> {
 
     private int id;
     private String name;
